@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-12T17:04:26.968Z",
+    "end": "2020-07-12T17:04:27.929Z",
+    "duration": 961,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1522d7cb-8ddc-4b9f-8518-c1ffa21d06f8",
+      "title": "",
+      "fullFile": "cypress/integration/regression-suite.spec.js",
+      "file": "cypress/integration/regression-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a9b8a89-df35-4767-9060-5ecc0f408da2",
+          "title": "Test suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test case 1",
+              "fullTitle": "Test suite 1 test case 1",
+              "timedOut": null,
+              "duration": 367,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Hello, there!');",
+              "err": {},
+              "uuid": "b285b816-f284-4c4c-b0a9-f032ea510c17",
+              "parentUUID": "4a9b8a89-df35-4767-9060-5ecc0f408da2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 2",
+              "fullTitle": "Test suite 1 test case 2",
+              "timedOut": null,
+              "duration": 121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Hello, there!');",
+              "err": {},
+              "uuid": "e28d3689-514b-4e1a-a57d-590ef3ed24e2",
+              "parentUUID": "4a9b8a89-df35-4767-9060-5ecc0f408da2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 3",
+              "fullTitle": "Test suite 1 test case 3",
+              "timedOut": null,
+              "duration": 47,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Hello, there!');",
+              "err": {},
+              "uuid": "f554af04-95d0-4523-ba74-569236c404bb",
+              "parentUUID": "4a9b8a89-df35-4767-9060-5ecc0f408da2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b285b816-f284-4c4c-b0a9-f032ea510c17",
+            "e28d3689-514b-4e1a-a57d-590ef3ed24e2",
+            "f554af04-95d0-4523-ba74-569236c404bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 535,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
