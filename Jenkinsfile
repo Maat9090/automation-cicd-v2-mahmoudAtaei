@@ -28,8 +28,12 @@ pipeline {
         }
          stage('Backend tests') {
             steps {
-                sh 'pwd'
-                sh 'ls -lart'
+                  sh '''
+                   cd  backend-project/
+                   npm run test:report
+                
+                
+                ''' 
             }
         }
          stage('Performance tests') {
