@@ -11,9 +11,19 @@ pipeline {
          stage('Frontend tests') {
             steps {
                sh '''
-                    echo 'Application deployed successfully!'                
+                    cd frontend-project/
+                    npm install && npm run test:report:regression                   
                 ''' 
-               
+                archiveArtifacts allowEmptyArchive: true, artifacts: 'frontend-project/cypress/videos/**'
+                publishHTML([
+                    allowMissing: false, 
+                    alwaysLinkToLastBuild: false, 
+                    keepAll: false, 
+                    reportDir: 'frontend-project/mochawesome-report', 
+                    reportFiles: 'mochawesome.html', 
+                    reportName: 'Frontend report', 
+                    reportTitles: ''
+                ])
             }
         }
          stage('Backend tests') {
